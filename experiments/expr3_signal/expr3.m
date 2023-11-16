@@ -1,5 +1,5 @@
-
-N = 1000;
+clc,clear,close all;
+N = 10000;
 Fs = 1000;
 x1 = triangle_wave(0:N-1);
 x2 = sqaure_wave(0:N-1);
@@ -8,10 +8,10 @@ X2 = fft(x2);
 figure;
 subplot(2, 3, 1); stem(0:8, x1(1:9)); title("三角波采样"); xlabel("n");
 subplot(2, 3, 4); stem(0:9, x2(1:10)); title("矩形波采样"); xlabel("n");
-subplot(2, 3, 2); plot(0:(2*pi/Fs):2*pi-(2*pi/Fs), abs(X1)); title("三角波幅频特性"); xlabel("\Omega");
-subplot(2, 3, 5); plot(0:(2*pi/Fs):2*pi-(2*pi/Fs), abs(X2)); title("矩形波幅频特性"); xlabel("\Omega");
-subplot(2, 3, 3); plot(0:(2*pi/Fs):2*pi-(2*pi/Fs), angle(X1)); title("矩形波相频特性"); xlabel("\Omega");
-subplot(2, 3, 6); plot(0:(2*pi/Fs):2*pi-(2*pi/Fs), angle(X2)); title("矩形波相频特性"); xlabel("\Omega");
+subplot(2, 3, 2); plot(0:(2*0.1*pi/Fs):2*pi-(2*0.1*pi/Fs), abs(X1)); title("三角波幅频特性"); xlabel("\Omega");
+subplot(2, 3, 5); plot(0:(2*0.1*pi/Fs):2*pi-(2*0.1*pi/Fs), abs(X2)); title("矩形波幅频特性"); xlabel("\Omega");
+subplot(2, 3, 3); plot(0:(2*0.1*pi/Fs):2*pi-(2*0.1*pi/Fs), angle(X1)); title("矩形波相频特性"); xlabel("\Omega");
+subplot(2, 3, 6); plot(0:(2*0.1*pi/Fs):2*pi-(2*0.1*pi/Fs), angle(X2)); title("矩形波相频特性"); xlabel("\Omega");
 %%
 
 N = 20000;
@@ -28,12 +28,14 @@ X34 = X3 .* X4;
 x12 = ifft(X12);
 x34 = ifft(X34);
 figure;
-subplot(2, 3, 1); stem(0:19, x1(1:20)); title("x_1序列"); xlabel("n");
-subplot(2, 3, 2); stem(0:19, x2(1:20)); title("x_2序列"); xlabel("n");
-subplot(2, 3, 3); stem(0:24, x12(1:25)); title("x_1和x_2卷积序列"); xlabel("n");
-subplot(2, 3, 4); stem(0:19, x3(1:20)); title("x_3序列"); xlabel("n");
-subplot(2, 3, 5); stem(0:19, x4(1:20)); title("x_4序列"); xlabel("n");
-subplot(2, 3, 6); stem(0:19, x34(1:20)); title("x_3和x_4卷积序列"); xlabel("n");
+subplot(2, 4, 1); stem(0:19, x1(1:20)); title("x_1序列"); xlabel("n");
+subplot(2, 4, 2); stem(0:19, x2(1:20)); title("x_2序列"); xlabel("n");
+subplot(2, 4, 3); stem(0:24, x12(1:25)); title("x_1和x_2卷积序列"); xlabel("n");
+subplot(2, 4, 4); plot(1:length(X12), abs(X12)); title("x_1和x_2卷积幅度谱"); xlabel("n");
+subplot(2, 4, 5); stem(0:19, x3(1:20)); title("x_3序列"); xlabel("n");
+subplot(2, 4, 6); stem(0:19, x4(1:20)); title("x_4序列"); xlabel("n");
+subplot(2, 4, 7); stem(0:19, x34(1:20)); title("x_3和x_4卷积序列"); xlabel("n");
+subplot(2, 4, 8); plot(1:length(X34), abs(X34)); title("x_3和x_4卷积幅度谱"); xlabel("n");
 
 %%
 Fs = 10000;
@@ -53,9 +55,9 @@ subplot(2, 2, 4); plot(t, abs(xf)); title("滤波信号时域波形"); xlabel("Time(s)")
 f11 = 5;
 f12 = 15;
 f13 = 40;
-t11 = 0:(1/f11):30;
-t12 = 0:(1/f12):10;
-t13 = 0:(1/f13):10;
+t11 = 0:(1/f11):(127/f11);
+t12 = 0:(1/f12):(127/f12);
+t13 = 0:(1/f13):(127/f13);
 x11 = signal4(t11);
 x12 = signal4(t12);
 x13 = signal4(t13);
@@ -100,13 +102,15 @@ for i = 1:16
 end
 Tiger_ori = fft(tiger_ori);
 figure;
-subplot(3, 1, 1); plot(linspace(0, 6.28, length(Tiger_ori)), abs(Tiger_ori)); title("原音乐频域"); xlabel("\Omega");
+subplot(3, 1, 1); plot(linspace(0, 6.28, length(Tiger_ori)), abs(Tiger_ori));
+title("原音乐频域"); xlabel("\Omega");
 audiowrite('5-3.wav',tiger_ori,Fs);
 
 Tiger_filter = Tiger_ori;
 Tiger_filter(0.5e4:5.5e4) = 0;
 tiger_filter = ifft(Tiger_filter);
-subplot(3, 1, 2); plot(linspace(0, 6.28, length(Tiger_filter)), abs(Tiger_filter));  title("消除高频分量后频域"); xlabel("\Omega");
+subplot(3, 1, 2); plot(linspace(0, 6.28, length(Tiger_filter)), abs(Tiger_filter));
+title("消除高频分量后频域"); xlabel("\Omega");
 audiowrite('5-4.wav',abs(tiger_filter),Fs);
 
 tiger_high = tiger_ori;
@@ -117,5 +121,6 @@ for i = 1:16
         sin(8*pi*f(i)*t((i-1)*Fs*0.5+1:i*Fs*0.5)));
 end
 Tiger_high = fft(tiger_high);
-subplot(3, 1, 3); plot(linspace(0, 6.28, length(Tiger_high)), abs(Tiger_high));  title("加入谐波后频域"); xlabel("\Omega");
+subplot(3, 1, 3); plot(linspace(0, 6.28, length(Tiger_high)), abs(Tiger_high));
+title("加入谐波后频域"); xlabel("\Omega");
 audiowrite('5-5.wav',abs(tiger_high),Fs);
