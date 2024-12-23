@@ -1,12 +1,12 @@
 # 信号分析与处理
 
-![Static Badge](https://img.shields.io/badge/%E8%80%83%E8%AF%95%E8%AF%BE-red) ![Static Badge](https://img.shields.io/badge/%E5%AD%A6%E5%88%86-2.5-moccasin)
+![Static Badge](https://img.shields.io/badge/%E8%80%83%E8%AF%95%E8%AF%BE-red) ![Static Badge](https://img.shields.io/badge/%E5%AD%A6%E5%88%86-3-moccasin)
 
 ![Static Badge](https://img.shields.io/badge/%E6%88%90%E7%BB%A9%E6%9E%84%E6%88%90-gold)
 ![Static Badge](https://img.shields.io/badge/%E4%BD%9C%E4%B8%9A-20%25-wheat) ![Static Badge](https://img.shields.io/badge/实验-20%25-wheat) ![Static Badge](https://img.shields.io/badge/%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95-60%25-wheat)
 
-![Static Badge](https://img.shields.io/badge/总学时-40-gold)
-![Static Badge](https://img.shields.io/badge/讲课学时-32-wheat) ![Static Badge](https://img.shields.io/badge/实验学时-2*4-wheat)
+![Static Badge](https://img.shields.io/badge/总学时-48-gold)
+![Static Badge](https://img.shields.io/badge/讲课学时-40-wheat) ![Static Badge](https://img.shields.io/badge/实验学时-2*4-wheat)
 
 ## 教材与参考书
 
@@ -53,7 +53,17 @@
   - 模拟化设计：重点掌握 Butterworth 低通滤波器的设计
   - 数字化设计：重点掌握无限冲激响应（IIR）数字滤波器的设计：冲激响应不变法、双线性变换法
 
+> by [Gaster](https://github.com/WDGaster703),2024.12
+
+23级信号相比22级，理论部分增加了8学时，总体内容不变，学时分配为：
+- 绪论（约 2 学时）
+- 连续信号分析（约 12 学时）
+- 离散信号分析（约 12 学时）
+- 信号处理基础（约 6 学时）
+- 滤波器（约 8 学时）
+
 > by [psp_dada](https://github.com/pspdada), 2024.11
+
 
 本课程专注于信号**分析**与**处理**的核心概念。
 
