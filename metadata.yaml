@@ -1,0 +1,189 @@
+ID: "AUTO2005"
+SimilarID: []
+Name: "信号分析与处理"
+CourseProperty:
+  Major:
+    - Year: "2019_2020"
+      Name: [ "自动化" ]
+      Degree: "本"
+  GradeSemesters:
+    - Grade: "大三"
+      Semester: "秋"
+  CourseType: "必修"
+  CourseID: "AUTO2005"
+  CourseName: "信号分析与处理"
+  Credit: "2.5"
+  CourseHour: "40.0"
+  GPAInfluence: "核心权重"
+  GroupCourse:
+    Link: "/blog/signal-analysis"
+    Desc: "本课程专注于信号分析与处理的核心概念，适合预习、自学、复习。"
+    Name: "信号分析与处理课程介绍"
+    Ids: ["AUTO2005", "AUTO2006", "AUTO2007"]
+  GradeComposition:
+    - Name: 作业
+      Percentage: 20
+    - Name: 实验
+      Percentage: 20
+    - Name: 期末考试
+      Percentage: 60
+  CourseHourComposition:
+    - Name: 授课
+      Hour: 40
+    - Name: 实验
+      Hour: 8
+
+  Major:
+    - Year: "2020_2021"
+      Name: [ "自动化" ]
+      Degree: "本"
+  GradeSemesters:
+    - Grade: "大三"
+      Semester: "秋"
+  CourseType: "必修"
+  CourseID: "AUTO2005"
+  CourseName: "信号分析与处理"
+  Credit: "2.5"
+  CourseHour: "40.0"
+  GPAInfluence: "核心权重"
+  GroupCourse:
+    Link: "/blog/signal-analysis"
+    Desc: "本课程讨论时域与频域的对偶关系，适合预习、自学、复习。"
+    Name: "信号分析与处理课程介绍"
+    Ids: ["AUTO2005", "AUTO2006", "AUTO2007"]
+  GradeComposition:
+    - Name: 作业
+      Percentage: 20
+    - Name: 实验
+      Percentage: 20
+    - Name: 期末考试
+      Percentage: 60
+  CourseHourComposition:
+    - Name: 授课
+      Hour: 40
+    - Name: 实验
+      Hour: 8
+
+  Major:
+    - Year: "2021_2022"
+      Name: [ "自动化", "自动化（第二学位）" ]
+      Degree: "本"
+  GradeSemesters:
+    - Grade: "大三"
+      Semester: "秋"
+  CourseType: "必修"
+  CourseID: "AUTO2005"
+  CourseName: "信号分析与处理"
+  Credit: "2.5"
+  CourseHour: "40.0"
+  GPAInfluence: "核心权重"
+  GroupCourse:
+    Link: "/blog/signal-analysis"
+    Desc: "课程旨在加强对傅里叶分析的应理解，加深对时域和频域之间关系的认知。"
+    Name: "信号分析与处理课程介绍"
+    Ids: ["AUTO2005", "AUTO2006", "AUTO2007"]
+  GradeComposition:
+    - Name: 作业
+      Percentage: 20
+    - Name: 实验
+      Percentage: 20
+    - Name: 期末考试
+      Percentage: 60
+  CourseHourComposition:
+    - Name: 授课
+      Hour: 40
+    - Name: 实验
+      Hour: 8
+
+  Major:
+    - Year: "2022_2023"
+      Name: [ "自动化", "自动化（第二学位）" ]
+      Degree: "本"
+  GradeSemesters:
+    - Grade: "大三"
+      Semester: "秋"
+  CourseType: "必修"
+  CourseID: "AUTO2005"
+  CourseName: "信号分析与处理"
+  Credit: "2.5"
+  CourseHour: "40.0"
+  GPAInfluence: "核心权重"
+  GroupCourse:
+    Link: "/blog/signal-analysis"
+    Desc: "本课程内容涵盖大量新概念，学习难度较大，推荐使用对比学习法。"
+    Name: "信号分析与处理课程介绍"
+    Ids: ["AUTO2005", "AUTO2006", "AUTO2007"]
+  GradeComposition:
+    - Name: 作业
+      Percentage: 20
+    - Name: 实验
+      Percentage: 20
+    - Name: 期末考试
+      Percentage: 60
+  CourseHourComposition:
+    - Name: 授课
+      Hour: 40
+    - Name: 实验
+      Hour: 8
+
+  Major:
+    - Year: "2023_2024"
+      Name: [ "自动化", "自动化（第二学士学位）" ]
+      Degree: "本"
+  GradeSemesters:
+    - Grade: "大三"
+      Semester: "秋"
+  CourseType: "必修"
+  CourseID: "AUTO2005"
+  CourseName: "信号分析与处理"
+  Credit: "2.5"
+  CourseHour: "40.0"
+  GPAInfluence: "核心权重"
+  GroupCourse:
+    Link: "/blog/signal-analysis"
+    Desc: "强调傅里叶级数和变换的内在联系，课程设计以应用为导向。"
+    Name: "信号分析与处理课程介绍"
+    Ids: ["AUTO2005", "AUTO2006", "AUTO2007"]
+  GradeComposition:
+    - Name: 作业
+      Percentage: 20
+    - Name: 实验
+      Percentage: 20
+    - Name: 期末考试
+      Percentage: 60
+  CourseHourComposition:
+    - Name: 授课
+      Hour: 40
+    - Name: 实验
+      Hour: 8
+
+  Major:
+    - Year: "2024_2025"
+      Name: [ "自动化", "工科试验班（自动化与电气工程）" ]
+      Degree: "本"
+  GradeSemesters:
+    - Grade: "大三"
+      Semester: "秋"
+  CourseType: "必修"
+  CourseID: "AUTO2005"
+  CourseName: "信号分析与处理"
+  Credit: "2.5"
+  CourseHour: "40.0"
+  GPAInfluence: "核心权重"
+  GroupCourse:
+    Link: "/blog/signal-analysis"
+    Desc: "课程讲授的内容与期望学习成果连接紧密，重视对实验和项目的理解。"
+    Name: "信号分析与处理课程介绍"
+    Ids: ["AUTO2005", "AUTO2006", "AUTO2007"]
+  GradeComposition:
+    - Name: 作业
+      Percentage: 20
+    - Name: 实验
+      Percentage: 20
+    - Name: 期末考试
+      Percentage: 60
+  CourseHourComposition:
+    - Name: 授课
+      Hour: 40
+    - Name: 实验
+      Hour: 8
