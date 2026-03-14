@@ -4,16 +4,15 @@ course_code = "AUTO2005"
 
 description = "本课程专注于信号分析与处理的核心概念。课程内容整体来说抽象层级较高且包含大量新概念，包括连续信号分析、离散信号分析、信号处理基础及滤波器设计等内容。"
 
-[[lecturers]]
+[lecturers]
+[[lecturers.items]]
 name = "谢晓晨"
 
-[[lecturers.reviews]]
+[[lecturers.items.reviews]]
 content = """
 授课风格：由于学时有限，语速较快，基本没有停顿。但是逻辑非常清晰，讲课的整体思维链也非常连贯。
 听课建议：不要走神，不要尝试在课上抄笔记（会跟不上的），课后再整理笔记。
 """
-
-
 [[sections]]
 title = "教材"
 
