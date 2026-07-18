@@ -1,3 +1,0 @@
-category: 必修
-semester: 第二学年春季
-name: 信号分析与处理
