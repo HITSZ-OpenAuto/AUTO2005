@@ -1,11 +1,5 @@
 # AUTO2005 - 信号分析与处理
 <!-- TOML-META: repo_type="normal" -->
-<!-- TOML-BADGES: source="grades_summary" -->
-
-![成绩构成](https://img.shields.io/badge/成绩构成-gold)
-![作业10%](https://img.shields.io/badge/作业-10%25-wheat)
-![实验25%](https://img.shields.io/badge/实验-25%25-wheat)
-![期末考试65%](https://img.shields.io/badge/期末考试-65%25-wheat)
 
 本课程专注于信号分析与处理的核心概念。课程内容整体来说抽象层级较高且包含大量新概念，包括连续信号分析、离散信号分析、信号处理基础及滤波器设计等内容。
 
